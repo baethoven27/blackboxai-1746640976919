@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEO Optimized Social Media Post Idea Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col items-center p-6">
+  <header class="mb-8 text-center max-w-3xl">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Social Media Post Idea Generator</h1>
+    <p class="text-gray-600">Generate SEO-optimized post ideas tailored to your niche and platform.</p>
+  </header>
+
+  <main class="w-full max-w-4xl bg-white rounded-lg shadow-md p-8">
+    <form id="postIdeaForm" class="space-y-6">
+      <div>
+        <label for="niche" class="block text-sm font-semibold text-gray-700 mb-1">Your Niche</label>
+        <input type="text" id="niche" name="niche" placeholder="e.g. Fitness, Tech, Cooking" required
+          class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">Content Type</label>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-h-64 overflow-y-auto border border-gray-200 rounded-md p-3 bg-gray-50">
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Trends" required class="form-radio text-indigo-600" />
+            <span>Trends</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Throwbacks" class="form-radio text-indigo-600" />
+            <span>Throwbacks</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Behind-The-Scenes" class="form-radio text-indigo-600" />
+            <span>Behind-The-Scenes</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Challenges" class="form-radio text-indigo-600" />
+            <span>Challenges</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Tutorials" class="form-radio text-indigo-600" />
+            <span>Tutorials</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Q&A" class="form-radio text-indigo-600" />
+            <span>Q&amp;A</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Testimonials" class="form-radio text-indigo-600" />
+            <span>Testimonials</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Announcements" class="form-radio text-indigo-600" />
+            <span>Announcements</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Polls" class="form-radio text-indigo-600" />
+            <span>Polls</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Tips & Tricks" class="form-radio text-indigo-600" />
+            <span>Tips &amp; Tricks</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Reviews" class="form-radio text-indigo-600" />
+            <span>Reviews</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Collaborations" class="form-radio text-indigo-600" />
+            <span>Collaborations</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Giveaways" class="form-radio text-indigo-600" />
+            <span>Giveaways</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Stories" class="form-radio text-indigo-600" />
+            <span>Stories</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="radio" name="contentType" value="Memes" class="form-radio text-indigo-600" />
+            <span>Memes</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-1">Select Platform(s)</label>
+        <div class="flex flex-wrap gap-4">
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" name="platforms" value="Youtube" class="form-checkbox text-indigo-600" />
+            <span><i class="fab fa-youtube text-red-600"></i> Youtube</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" name="platforms" value="Tiktok" class="form-checkbox text-indigo-600" />
+            <span><i class="fab fa-tiktok text-black"></i> Tiktok</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" name="platforms" value="Instagram" class="form-checkbox text-indigo-600" />
+            <span><i class="fab fa-instagram text-pink-500"></i> Instagram</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" name="platforms" value="X" class="form-checkbox text-indigo-600" />
+            <span><i class="fab fa-x-twitter text-blue-600"></i> X</span>
+          </label>
+          <label class="flex items-center space-x-2 cursor-pointer">
+            <input type="checkbox" name="platforms" value="Facebook" class="form-checkbox text-indigo-600" />
+            <span><i class="fab fa-facebook text-blue-700"></i> Facebook</span>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label for="additionalKeywords" class="block text-sm font-semibold text-gray-700 mb-1">Additional Keywords (optional)</label>
+        <input type="text" id="additionalKeywords" name="additionalKeywords" placeholder="e.g. motivation, productivity"
+          class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      </div>
+
+      <div>
+        <label for="tone" class="block text-sm font-semibold text-gray-700 mb-1">Tone (optional)</label>
+        <select id="tone" name="tone" class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <option value="" selected>Choose a tone</option>
+          <option value="Friendly">Friendly</option>
+          <option value="Professional">Professional</option>
+          <option value="Humorous">Humorous</option>
+          <option value="Inspirational">Inspirational</option>
+          <option value="Casual">Casual</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-md hover:bg-indigo-700 transition-colors">
+        Generate Post Idea
+      </button>
+    </form>
+
+    <section id="resultSection" class="mt-10 hidden">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">Your SEO-Optimized Post Idea</h2>
+      <div id="resultContent" class="bg-gray-100 p-6 rounded-md whitespace-pre-wrap text-gray-800"></div>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('postIdeaForm');
+    const resultSection = document.getElementById('resultSection');
+    const resultContent = document.getElementById('resultContent');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const niche = form.niche.value.trim();
+      const contentType = form.contentType.value;
+      const platforms = Array.from(form.platforms)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+      const additionalKeywords = form.additionalKeywords.value.trim();
+      const tone = form.tone.value;
+
+      if (!niche || !contentType || platforms.length === 0) {
+        alert('Please fill in all required fields: Niche, Content Type, and at least one Platform.');
+        return;
+      }
+
+      // Generate SEO-optimized post idea and instructions
+      let idea = `Niche: ${niche}\nContent Type: ${contentType}\nPlatforms: ${platforms.join(', ')}\n`;
+      if (additionalKeywords) idea += `Additional Keywords: ${additionalKeywords}\n`;
+      if (tone) idea += `Tone: ${tone}\n`;
+      idea += '\n---\n';
+
+      idea += generatePostIdea(niche, contentType, platforms, additionalKeywords, tone);
+
+      resultContent.textContent = idea;
+      resultSection.classList.remove('hidden');
+      resultSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    function generatePostIdea(niche, contentType, platforms, additionalKeywords, tone) {
+      // Basic template for SEO-optimized post idea and instructions
+      let instructions = `Create a ${contentType.toLowerCase()} post in the niche of ${niche}.`;
+
+      if (tone) {
+        instructions += ` Use a ${tone.toLowerCase()} tone to engage your audience.`;
+      }
+
+      if (additionalKeywords) {
+        instructions += ` Incorporate keywords like "${additionalKeywords}" to boost SEO.`;
+      }
+
+      instructions += ` Tailor your content for the following platform${platforms.length > 1 ? 's' : ''}: ${platforms.join(', ')}.\n\n`;
+
+      instructions += 'Post Idea:\n';
+
+      // Generate a simple post idea based on content type and niche
+      switch (contentType) {
+        case 'Trends':
+          instructions += `Share the latest trending topics or challenges in the ${niche} niche. Use popular hashtags and sounds relevant to your platforms.`;
+          break;
+        case 'Throwbacks':
+          instructions += `Post a nostalgic or memorable moment related to your ${niche} journey or brand history. Use engaging captions to connect emotionally.`;
+          break;
+        case 'Behind-The-Scenes':
+          instructions += `Show behind-the-scenes footage or images of your ${niche} work process or daily routine. Be authentic and transparent.`;
+          break;
+        case 'Challenges':
+          instructions += `Create or participate in a challenge related to ${niche} that encourages audience interaction and sharing.`;
+          break;
+        case 'Tutorials':
+          instructions += `Provide step-by-step tutorials or how-tos in the ${niche} area, focusing on clear visuals and concise instructions.`;
+          break;
+        case 'Q&A':
+          instructions += `Answer frequently asked questions or engage with your audience by addressing their queries about ${niche}.`;
+          break;
+        case 'Testimonials':
+          instructions += `Share testimonials or success stories from clients or users related to your ${niche} offerings.`;
+          break;
+        case 'Announcements':
+          instructions += `Announce new products, services, or updates in your ${niche} business or brand.`;
+          break;
+        case 'Polls':
+          instructions += `Create interactive polls or surveys to gather audience opinions on ${niche} topics.`;
+          break;
+        case 'Tips & Tricks':
+          instructions += `Share useful tips and tricks that help your audience improve or enjoy ${niche} more effectively.`;
+          break;
+        case 'Reviews':
+          instructions += `Review products, services, or tools related to the ${niche} niche, providing honest and detailed feedback.`;
+          break;
+        case 'Collaborations':
+          instructions += `Highlight collaborations with other creators or brands in the ${niche} space to expand reach and credibility.`;
+          break;
+        case 'Giveaways':
+          instructions += `Host giveaways or contests to increase engagement and reward your audience within the ${niche} community.`;
+          break;
+        case 'Stories':
+          instructions += `Share personal or brand stories that resonate with your audience and build a deeper connection in the ${niche} niche.`;
+          break;
+        case 'Memes':
+          instructions += `Create or share humorous memes related to ${niche} to entertain and engage your followers.`;
+          break;
+        default:
+          instructions += `Create engaging content related to ${niche} tailored to your audience's interests.`;
+      }
+
+      instructions += '\n\nTips for Success:\n';
+      instructions += '- Use platform-specific hashtags and keywords.\n';
+      instructions += '- Post at optimal times for your audience.\n';
+      instructions += '- Engage with comments and shares promptly.\n';
+      instructions += '- Use high-quality visuals and captions.\n';
+      instructions += '- Monitor analytics to refine your strategy.\n';
+
+      return instructions;
+    }
+  </script>
+</body>
+</html>
